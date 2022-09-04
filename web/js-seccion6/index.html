@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- JavaScript Bundle with Popper -->
+  <style>
+    body {
+      padding: 35px;
+      background-image: linear-gradient(to bottom right,#0e406e,#11cfcb);
+      min-height: 100vh;
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+  <h1 class="text-white text-center">JAVASCRIPT</h1>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed border border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Que es JavaScript
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          JavaScript es un lenguaje de programación que se utiliza principalmente para crear
+          páginas web dinámicas.
+          Una página web dinámica es aquella que incorpora efectos como texto que aparece y
+          desaparece, animaciones, acciones que se activan al pulsar botones y ventanas con
+          mensajes de aviso al usuario.
+          Técnicamente, JavaScript es un lenguaje de programación interpretado, por lo que no es
+          necesario compilar los programas para ejecutarlos. En otras palabras, los programas
+          escritos con JavaScript se pueden probar directamente en cualquier navegador sin
+          necesidad de procesos intermedios.
+          A pesar de su nombre, JavaScript no guarda ninguna relación directa con el lenguaje de
+          programación Java.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed border border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Historia
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo
+          hacían con módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a
+          desarrollarse las primeras aplicaciones web y por tanto, las páginas web comenzaban a
+          incluir formularios complejos.
+          Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan
+          lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el
+          navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un
+          formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a
+          mostrar el formulario indicando los errores existentes.
+          Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar
+          este problema adaptando otras tecnologías existentes (como ScriptEase) al navegador
+          Netscape Navigator 2.0, que iba a lanzarse en 1995. Inicialmente, Eich denominó a su
+          lenguaje LiveScript.
+          Posteriormente, Netscape firmó una alianza con Sun Microsystems para el desarrollo del
+          nuevo lenguaje de programación. Además, justo antes del lanzamiento Netscape decidió
+          cambiar el nombre por el de JavaScript. La razón del cambio de nombre fue
+          exclusivamente por marketing, ya que Java era la palabra de moda en el mundo
+          informático y de Internet de la época.
+          La primera versión de JavaScript fue un completo éxito y Netscape Navigator 3.0 ya
+          incorporaba la siguiente versión del lenguaje.</div>
+        </div>
+      </div>
+        
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading3">
+        <button class="accordion-button collapsed border border-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapseThree">
+          Especificaciones
+          
+        </button>
+      </h2>
+      <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">ECMA ha publicado varios estándares relacionados con ECMAScript. En Junio de 1997 se
+          publicó la primera edición del estándar ECMA-262. Un año después, en Junio de 1998 se
+          realizaron pequeñas modificaciones para adaptarlo al estandar ISO/IEC-16262 y se creó
+          la segunda edición.
+          La tercera edición del estándar ECMA-262 (publicada en Diciembre de 1999) es la
+          versión que utilizan los navegadores actuales y se puede consultar gratuitamente en
+          http://www.ecma-international.org/publications/standards/Ecma-262.htm
+          Actualmente se encuentra en desarrollo la cuarta versión de ECMA-262, que podría
+          incluir novedades como paquetes, namespaces, definición explícita de clases, etc.
+          ECMA también ha definido varios estándares relacionados con ECMAScript, como el
+          estándar ECMA-357, que define una extensión conocida como E4X y que permite la
+          integración de JavaScript y XML.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading4">
+        <button class="accordion-button collapsed border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseThree">
+          Como incluir JavaScript en html
+          
+        </button>
+      </h2>
+      <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">La integración de JavaScript y XHTML es muy flexible, ya que existen al menos tres
+          formas para incluir código JavaScript en las páginas web.<code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading5">
+        <button class="accordion-button collapsed border border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+          Etiqueta noscript
+          
+        </button>
+      </h2>
+      <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Algunos navegadores no disponen de soporte completo de JavaScript, otros navegadores
+          permiten bloquearlo parcialmente e incluso algunos usuarios bloquean completamente
+          el uso de JavaScript porque creen que así navegan de forma más segura.
+          En estos casos, es habitual que si la página web requiere JavaScript para su correcto
+          funcionamiento, se incluya un mensaje de aviso al usuario indicándole que debería
+          activar JavaScript para disfrutar completamente de la página. </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading6">
+        <button class="accordion-button collapsed border border-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+          Sintaxis
+          
+        </button>
+      </h2>
+      <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que
+          deben seguirse al escribir el código fuente de los programas para considerarse como
+          correctos para ese lenguaje de programación.
+          La sintaxis de JavaScript es muy similar a la de otros lenguajes de programación como
+          Java y C. Las normas básicas que definen la sintaxis de JavaScript son las siguientes:
+          ▪ No se tienen en cuenta los espacios en blanco y las nuevas líneas: como
+          sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco
+          sobrante, por lo que el código se puede ordenar de forma adecuada para
+          entenderlo mejor (tabulando las líneas, añadiendo espacios, creando nuevas
+          líneas, etc.)
+          ▪ Se distinguen las mayúsculas y minúsculas: al igual que sucede con la sintaxis
+          de las etiquetas y elementos XHTML. Sin embargo, si en una página XHTML se
+          utilizan indistintamente mayúsculas y minúsculas, la página se visualiza
+          correctamente, siendo el único problema la no validación de la página. En cambio,
+          si en JavaScript se intercambian mayúsculas y minúsculas el script no funciona.
+          ▪ No se define el tipo de las variables: al crear una variable, no es necesario
+          indicar el tipo de dato que almacenará. De esta forma, una misma variable puede
+          almacenar diferentes tipos de datos durante la ejecución del script.
+          ▪ No es necesario terminar cada sentencia con el carácter de punto y coma (;):
+          en la mayoría de lenguajes de programación, es obligatorio terminar cada
+          sentencia con el carácter ;. Aunque JavaScript no obliga a hacerlo, es conveniente
+          seguir la tradición de terminar cada sentencia con el carácter del punto y coma
+          (;).
+          ▪ Se pueden incluir comentarios: los comentarios se utilizan para añadir
+          información en el código fuente del programa.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading7">
+        <button class="accordion-button collapsed border border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+          posibilidades y limitaciones
+          
+        </button>
+      </h2>
+      <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Desde su aparición, JavaScript siempre fue utilizado de forma masiva por la mayoría de
+          sitios de Internet. La aparición de Flash disminuyó su popularidad, ya que Flash
+          permitía realizar algunas acciones imposibles de llevar a cabo mediante JavaScript.
+          Sin embargo, la aparición de las aplicaciones AJAX programadas con JavaScript le ha
+          devuelto una popularidad sin igual dentro de los lenguajes de programación web.
+          En cuanto a las limitaciones, JavaScript fue diseñado de forma que se ejecutara en un
+          entorno muy limitado que permitiera a los usuarios confiar en la ejecución de los scripts.
+          De esta forma, los scripts de JavaScript no pueden comunicarse con recursos que no
+          pertenezcan al mismo dominio desde el que se descargó el script. Los scripts tampoco
+          pueden cerrar ventanas que no hayan abierto esos mismos scripts. Las ventanas que se
+          crean no pueden ser demasiado pequeñas ni demasiado grandes ni colocarse fuera de la
+          vista del usuario (aunque los detalles concretos dependen de cada navegador).
+          Además, los scripts no pueden acceder a los archivos del ordenador del usuario (ni en
+          modo lectura ni en modo escritura) y tampoco pueden leer o modificar las preferencias
+          del navegador.
+          Por último, si la ejecución de un script dura demasiado tiempo (por ejemplo por un
+          error de programación) el navegador informa al usuario de que un script está
+          consumiendo demasiados recursos y le da la posibilidad de detener su ejecución.t</div>
+      </div>
+
+    </div><div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading8">
+        <button class="accordion-button collapsed border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
+          Javascript y navegadores
+          
+        </button>
+      </h2>
+      <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"b >Los navegadores más modernos disponibles actualmente incluyen soporte de JavaScript
+          hasta la versión correspondiente a la tercera edición del estándar ECMA-262.
+          La mayor diferencia reside en el dialecto utilizado, ya que mientras Internet Explorer
+          utiliza JScript, el resto de navegadores (Firefox, Opera, Safari, Konqueror) utilizan
+          JavaScript.</div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading9">
+        <button class="accordion-button collapsed border border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseThree">
+          Javascript en otros entornos y el primer script
+          
+        </button>
+      </h2>
+      <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"b>La inigualable popularidad de JavaScript como lenguaje de programación de
+          aplicaciones web se ha extendido a otras aplicaciones y otros entornos no relacionados
+          con la web.
+          Herramientas como Adobe Acrobat permiten incluir código JavaScript en archivos PDF.
+          Otras herramientas de Adobe como Flash y Flex utilizan ActionScript, un dialecto del
+          mismo estándar de JavaScript.
+          </div>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>

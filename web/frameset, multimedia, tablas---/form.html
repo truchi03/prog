@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="./index.html">Inicio</a>
+    <a href="./tablas.html">Tablas</a>
+    <a href="./multimedia.html">Multimedia</a>
+    <a href="./form.html">Formulario</a>
+    <a href="./frameset.html">Frameset</a>
+  </div>
+
+  <h1>Encuesta de satisfacción</h1>
+<div>
+  <form 
+    action="mailto:hermese@gmail.com"
+    method="post"
+    enctype="text/plain"
+  >
+
+    <label>Nombres</label>
+    <input type="text" name="nombre" required>
+    <br><br>
+
+    <label>Apellidos</label>
+    <input type="text" name="apellidos" required>
+    <br><br>
+
+    <label>Correo</label>
+    <input type="email" name="correo" required>
+    <br><br>
+
+    <label>Teléfono</label>
+    <input type="text" name="telefono" required>
+    <br><br>
+
+    <label>Tipo de actor</label><br>
+    <input type="radio" name="tipo" id="tipo-c" value="cliente" required>
+    <label for="tipo-c">Cliente</label>
+    <input type="radio" name="tipo" id="tipo-p" value="proveedor" required>
+    <label for="tipo-p">Proveedor</label>
+    <br><br>
+
+    <label>Calificación servicio</label>
+    <select name="calificacion" required>
+      <option value="0">Seleccionar...</option>
+      <option value="1">Muy mala</option>
+      <option value="2">Mala</option>
+      <option value="3">Aceptable</option>
+      <option value="4">Buena</option>
+      <option value="5">Excelente</option>
+    </select>
+    <br><br>
+
+    <label>Comentarios</label><br>
+    <textarea name="comentarios"></textarea>
+    <br><br>
+
+    <label>¿Enviar respuesta al correo?</label>
+    <input type="checkbox" value="respuesta">
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+</div>
+  </form>
+
+</body>
+</html>

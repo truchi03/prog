@@ -1,0 +1,16 @@
+h4 {
+    color:blue;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+label {
+   font-weight: bold;
+}
+
+input {
+    margin:5px;
+    background: #D1F2F6;
+    border-color: 2px solid black;
+    border-radius: 30%;
+}
