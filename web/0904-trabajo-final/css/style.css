@@ -1,0 +1,10 @@
+.ejercicio {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+table {
+    width: 100%;
+}
