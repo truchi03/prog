@@ -1,10 +1,46 @@
+.body-index {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.grid-ejercicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .ejercicio {
     margin: 20px;
     padding: 20px;
-    border: 1px solid black;
+    border: 5px solid green;
+    border-radius: 15px;
     background-color: beige;
 }
 
-table {
+.form-container {
+    margin-top: 170px;
+}
+
+.body-form {
+    background-image: linear-gradient(to right bottom, #b9f898, #245c90);
+}
+
+.header-form {
+    background-image: url(../img/bg2.jpg);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    text-align: center;
+}
+
+#mensaje-error {
+    display: none;
+}
+
+.body-index button {
     width: 100%;
 }

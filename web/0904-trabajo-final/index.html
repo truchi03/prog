@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momento 3</title>
-    <script src="./js/all.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/funciones.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
     
@@ -13,115 +14,75 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    
-    <!-- 
-        Validaciones:
-        nombre
-        apellido
-        edad
-        direccion
-        correo electronico
-        fecha nacimiento
-        sexo: f-m
-        telefono
-     -->
+<body class="body-index">
 
     <div class="container">
-        <h1>Formulario</h1>
+        <h1 class="text-center mt-4 text-white">MOMENTO 3</h1>
 
-        <form onsubmit="enviar()">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
-              <div id="nameHelp" class="form-text">El nombre debe tener más de un caracter</div>
+        <div class="grid-ejercicios">
+            <div class="ejercicio">
+                <h4>1. Datos personales</h4> 
+                <button class="btn btn-info" onclick="datos()">Ejecutar</button>
+                <div id="ejer1"></div>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="ejercicio">
+                <h4>2. Área rombo</h4> 
+                <button class="btn btn-info" onclick="rombo()">Ejecutar</button>
+                <div id="ejer2"></div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="ejercicio">
+                <h4>3. Multiplicación de un número por π</h4> 
+                <button class="btn btn-info" onclick="numero()">Ejecutar</button>
+                <div id="ejer3"></div>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+
+            <div class="ejercicio">
+                <h4>4. Área rectángulo</h4> 
+                <button class="btn btn-info" onclick="rectangulo()">Ejecutar</button>
+                <div id="ejer4"></div>
             </div>
-            <input type="submit" class="btn btn-primary" value="Enviarrrrrr">
-        </form>
-    </div>
+            <div class="ejercicio">
+                <h4>5. Lista productos</h4> 
+                <button class="btn btn-info" onclick="producto()">Ejecutar</button>
+                <div id="ejer5"></div>
+            </div>
+            <div class="ejercicio">
+                <h4>6. Área de triángulo</h4> 
+                <button class="btn btn-info" onclick="triangulo()">Ejecutar</button>
+                <div id="ejer6"></div>
+            </div>
+        
 
+            <div class="ejercicio">
+                <h4>7. Promedio de 10 números</h4> 
+                <button class="btn btn-info" onclick="promedio10n()">Ejecutar</button>
+                <div id="ejer7"></div>
+            </div>
+            <div class="ejercicio">
+                <h4>8. Menor o mayor de edad</h4> 
+                <button class="btn btn-info" onclick="edad()">Ejecutar</button>
+                <div id="ejer8"></div>
+            </div>
+            <div class="ejercicio">
+                <h4>9. Operación aritmética</h4> 
+                <button class="btn btn-info" onclick="numeros()">Ejecutar</button>
+                <div id="ejer9"></div>
+            </div>
+        
 
+            <div class="ejercicio">
+                <h4>10. Temperatura</h4> 
+                <button class="btn btn-info" onclick="temperatura()">Ejecutar</button>
+                <div id="ejer10"></div>
+            </div>
+            <div class="ejercicio">
+                <h4>11. Notas materias</h4> 
+                <button class="btn btn-info" onclick="materias()">Ejecutar</button>
+                <div id="ejer11"></div>
+            </div>
+        </div>
 
-    <div class="container">
-        <h1 class="text-center">MOMENTO 3</h1>
-
-        <table>
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="ejercicio">
-                            <h1>EJ 1</h1> 
-                            <button class="btn btn-info" onclick="datos()">Ejecutar</button>
-                            <div id="ejer1"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="ejercicio">
-                            <h1>EJ 2</h1> 
-                            <button class="btn btn-info" onclick="rombo()">Ejecutar</button>
-                            <div id="ejer2"></div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="ejercicio">
-                            <h1>EJ 3</h1> 
-                            <button class="btn btn-info" onclick="numero()">Ejecutar</button>
-                            <div id="ejer3"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ejercicio">
-                            <h1>EJ 4 </h1> 
-                            <button class="btn btn-info" onclick="area()">Ejecutar</button>
-                            <div id="ejer4"></div>
-                        </div>
-                    </td>
-                    
-                    <td>
-                        <div class="ejercicio" id="ejer5">x</div>
-                    </td>
-                    <td>
-                        <div class="ejercicio" id="ejer6">x</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ejercicio" id="ejer7">x</div>
-                    </td>
-                    <td>
-                        <div class="ejercicio" id="ejer8">x</div>
-                    </td>
-                    <td>
-                        <div class="ejercicio" id="ejer9">x</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ejercicio" id="ejer10">x</div>
-                    </td>
-                    <td>
-                        <div class="ejercicio" id="ejer11">x</div>
-                    </td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
     </div>
     
 
